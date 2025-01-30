@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Signup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: "Raleway", serif;
+      overflow-x: hidden;
+      background-color: #F7F7F7;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #3E7CB1;
+      padding: 10px 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar-brand span {
+      color: #F9A825;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to bottom right, #3E7CB1, #00A884);
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+
+    /* Signup Form Container */
+    .signup-container {
+      background-color: #fff;
+      padding: 40px 20px;
+      margin: 50px auto;
+      width: 400px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+    .signup-container h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #3E7CB1;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      font-size: 1rem;
+      color: #333;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+      background-color: #F7F7F7;
+      box-sizing: border-box;
+    }
+    .form-group input:focus {
+      border-color: #3E7CB1;
+      background-color: #fff;
+      outline: none;
+    }
+
+    /* Button Styling */
+    button.btn-signup {
+      width: 100%;
+      padding: 15px 20px;
+      background-color: #F9A825;
+      color: #fff;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    button.btn-signup:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(249, 168, 37, 0.4);
+    }
+
+    /* Login Link Styling */
+    .login-link {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      color: #3E7CB1;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    .login-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#" class="navbar-brand">User <span>Signup</span></a>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Create an Account</h1>
+    <p>Join us today by filling out the form below.</p>
+  </div>
+
+  <!-- Signup Form -->
+  <div class="signup-container">
+    <h2>Signup</h2>
+    <form action="signup" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+      </div>
+      <button type="submit" class="btn-signup">Signup</button>
+      <!-- Login Link -->
+      <a href="UserLogin.html" class="login-link">Already have an account? Login</a>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

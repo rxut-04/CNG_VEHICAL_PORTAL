@@ -1,0 +1,50 @@
+/* Ensure the layout covers 100% of the height, including footer */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  min-width: 200px;
+  height: 100vh; /* Ensure sidebar stretches the full height of the viewport */
+  position: sticky; /* Sidebar stays fixed while scrolling main content */
+  top: 0;
+}
+
+/* Main Wrapper for Sidebar and Content */
+.d-flex {
+  flex: 1; /* Fills remaining space above the footer */
+}
+
+/* Cards Section */
+.card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for cards */
+  border-radius: 8px; /* Rounded corners for better UI */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #343a40; /* Dark background */
+  color: white; /* White text for contrast */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  margin-top: auto; /* Push footer to the bottom when content is small */
+}
+
+/* Miscellaneous */
+body {
+  background-color: #f8f9fa; /* Light gray background for the page */
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Add hover effect to sidebar links */
+}
